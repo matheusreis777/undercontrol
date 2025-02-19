@@ -8,12 +8,16 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/undercontrol",
         "index": "apps/undercontrol/src/index.html",
         "browser": "apps/undercontrol/src/main.ts",
-        "polyfills": ["zone.js"],
+        "polyfills": [
+          "zone.js"
+        ],
         "tsConfig": "apps/undercontrol/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
@@ -22,7 +26,10 @@
             "input": "apps/undercontrol/public"
           }
         ],
-        "styles": ["apps/undercontrol/src/styles.scss"],
+        "styles": [
+          "./node_modules/ng-zorro-antd/ng-zorro-antd.min.css",
+          "apps/undercontrol/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -72,7 +79,9 @@
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
       "options": {
         "jestConfig": "apps/undercontrol/jest.config.ts"
       }
