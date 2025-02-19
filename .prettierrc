@@ -1,3 +1,13 @@
 {
-  "singleQuote": true
+  "singleQuote": true,
+  "printWidth": 380,
+  "arrowParens": "avoid",
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": {
+        "parser": "html"
+      }
+    }
+  ]
 }
