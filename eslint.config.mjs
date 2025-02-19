@@ -3,14 +3,14 @@ import eslintPluginPrettierRecommended from 'eslint-config-prettier';
 
 export default [
   ...nx.configs['flat/base'],
-  ...nx.configs['flat/typescript'],
-  ...nx.configs['flat/javascript'],
+  ...nx.configs['flat/angular'],
+  ...nx.configs['flat/angular-template'],
   eslintPluginPrettierRecommended,
   {
     ignores: ['**/dist'],
   },
   {
-    files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
+    files: ['**/*.ts'],
     rules: {
       '@nx/enforce-module-boundaries': [
         'error',
@@ -23,6 +23,28 @@ export default [
               onlyDependOnLibsWithTags: ['*'],
             },
           ],
+        },
+      ],
+      '@angular-eslint/directive-selector': [
+        'error',
+        {
+          type: 'attribute',
+          prefix: 'app',
+          style: 'camelCase',
+        },
+      ],
+      '@angular-eslint/component-selector': [
+        'error',
+        {
+          type: 'element',
+          prefix: 'app',
+          style: 'kebab-case',
+        },
+      ],
+      '@angular-eslint/component-class-suffix': [
+        'error',
+        {
+          suffixes: ['Component', 'Page', 'Dialog', 'Layout'],
         },
       ],
     },
