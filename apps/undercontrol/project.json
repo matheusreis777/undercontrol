@@ -27,9 +27,23 @@
           }
         ],
         "styles": [
-          "./node_modules/ng-zorro-antd/ng-zorro-antd.min.css",
-          "apps/undercontrol/src/styles.scss"
+          "apps/undercontrol/src/styles.scss",
+          {
+            "input": "apps/undercontrol/src/styles/default.less",
+            "bundleName": "default",
+            "inject": false
+          },
+          {
+            "input": "apps/undercontrol/src/styles/dark.less",
+            "bundleName": "dark",
+            "inject": false
+          }
         ],
+        "stylePreprocessorOptions": {
+          "includePaths": [
+            "apps/undercontrol/src/styles"
+          ]
+        },
         "scripts": []
       },
       "configurations": {
