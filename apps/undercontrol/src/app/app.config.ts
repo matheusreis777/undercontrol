@@ -8,9 +8,10 @@ import { FormsModule } from '@angular/forms';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { provideHttpClient } from '@angular/common/http';
 import { ThemeService } from './shared/services/theme/theme.service';
+import { AuthService } from '@domain/auth/services/auth.service';
 
 registerLocaleData(pt);
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(appRoutes), provideNzI18n(pt_BR), importProvidersFrom(FormsModule), provideAnimationsAsync(), provideHttpClient(), provideAppInitializer(() => inject(ThemeService).loadTheme())],
+  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(appRoutes), provideNzI18n(pt_BR), importProvidersFrom(FormsModule), provideAnimationsAsync(), provideHttpClient(), provideAppInitializer(() => inject(ThemeService).loadTheme()), provideAppInitializer(() => inject(AuthService).load())],
 };

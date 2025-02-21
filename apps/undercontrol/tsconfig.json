@@ -12,7 +12,8 @@
       "@core/*": ["apps/undercontrol/src/app/core/*"],
       "@domain/*": ["apps/undercontrol/src/app/domain/*"],
       "@shared/*": ["apps/undercontrol/src/app/shared/*"],
-      "@widgets/*": ["apps/undercontrol/src/app/widgets/*"]
+      "@widgets/*": ["apps/undercontrol/src/app/widgets/*"],
+      "@env/*": ["apps/undercontrol/src/environments/*"]
     }
   },
   "files": [],
