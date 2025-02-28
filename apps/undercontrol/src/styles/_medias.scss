@@ -37,7 +37,7 @@ $media-tiny-mobile: 420px;
 }
 
 @mixin max-large-desktop {
-    @media screen and (max-width: $max-large-desktop) {
+    @media screen and (max-width: $media-large-desktop) {
         @content;
     }
 }

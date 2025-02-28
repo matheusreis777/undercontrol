@@ -1,11 +1,26 @@
 @use 'medias' as *;
 
-nz-card {
-    margin: 0 auto;
-    top: 2rem;
-    width: 450px;
+body, html {
+    height: 100%;
+    margin: 0;
+}
 
-    @include max-tablet {
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+}
+
+nz-card {
+    width: 450px;
+    margin: 0 auto;
+    
+    @include max-desktop {
         width: 90vw;
+    }
+
+    @include min-desktop {
+        width: 450px;
     }
 }
