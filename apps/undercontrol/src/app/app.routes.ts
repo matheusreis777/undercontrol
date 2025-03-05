@@ -16,4 +16,8 @@ export const appRoutes: Route[] = [
       },
     ],
   },
+  {
+    path: '',
+    loadComponent: () => import('./landing-page/landing-page.page').then(m => m.LandingPagePage),
+  },
 ];
