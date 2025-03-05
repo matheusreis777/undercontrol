@@ -30,11 +30,11 @@ export interface Select {
   dropdownMatchSelectWidth?: boolean;
 }
 
-export interface DynamicFormDate {
+export interface iDynamicFormDate {
   disableDate?: (current: Date) => boolean;
 }
 
-export interface iDynamicFormConfig {
+export interface DynamicFormConfig {
   label?: string;
   name: string;
   type: TypeControl;
@@ -48,7 +48,7 @@ export interface iDynamicFormConfig {
   size?: number;
   mobileSize?: number;
   select?: Select;
-  date?: DynamicFormDate;
+  date?: iDynamicFormDate;
   validations?: ValidatorFn | ValidatorFn[];
   hint?: string;
   help?: string;

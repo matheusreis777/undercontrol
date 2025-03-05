@@ -31,7 +31,7 @@ import { eDynamicField } from './dynamic-field.enum';
 
 import { ERROR_MESSAGES, ErrorMessages } from './form-errors';
 import { AutoFocusDirective } from '../../directives/auto-focus/auto-focus.directive';
-import { iDynamicFormConfig } from './dynamic-form-confg.interface';
+import { DynamicFormConfig } from './dynamic-form-confg.interface';
 
 @Pipe({ name: 'formIsRequired', standalone: true })
 export class FormIsRequiredPipe implements PipeTransform {
@@ -91,7 +91,7 @@ export class DynamicFormComponent implements OnInit {
   protected autoSizeColumns = 12;
   protected eDynamicField = eDynamicField;
 
-  @Input() config?: iDynamicFormConfig[];
+  @Input() config?: DynamicFormConfig[];
   @Input({ transform: booleanAttribute }) hideOptionalLabel = false;
   @Output() formValueChange = new EventEmitter();
 
@@ -138,7 +138,7 @@ export class DynamicFormComponent implements OnInit {
     });
   }
 
-  togglePasswordIconVisibility(field: iDynamicFormConfig) {
+  togglePasswordIconVisibility(field: DynamicFormConfig) {
     const control = this.config?.find(c => c.name === field.name);
     if (!control) return;
 
