@@ -413,13 +413,13 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-12">
           <div className="relative h-8 w-40">
             <Image 
-              src="/assets/light.png" 
+              src="/assets/under_control_logo_light.png" 
               alt="Under Control"
               fill
               className="object-contain dark:hidden"
             />
             <Image 
-              src="/assets/dark.png" 
+              src="/assets/under_control_logo_dark.png" 
               alt="Under Control"
               fill
               className="object-contain hidden dark:block"
