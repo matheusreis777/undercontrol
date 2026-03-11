@@ -96,13 +96,13 @@ const Navbar = () => {
         <div className="flex items-center gap-2">
           <div className="relative h-10 w-48">
             <Image 
-              src="/assets/light.png" 
+              src="/assets/under_control_logo_light.png" 
               alt="Under Control"
               fill
               className="object-contain dark:hidden"
             />
             <Image 
-              src="/assets/dark.png" 
+              src="/assets/under_control_logo_dark.png" 
               alt="Under Control"
               fill
               className="object-contain hidden dark:block"
