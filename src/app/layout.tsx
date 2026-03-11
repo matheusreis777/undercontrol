@@ -14,7 +14,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Under Control | Gestão Inteligente de Negócios",
+  title: "Under Control",
   description: "Plataforma central de soluções digitais para gestão empresarial e prestação de serviços.",
 };
 

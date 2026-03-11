@@ -96,13 +96,13 @@ const Navbar = () => {
         <div className="flex items-center gap-2">
           <div className="relative h-10 w-48">
             <Image 
-              src="/assets/logo-light.png" 
+              src="/assets/light.png" 
               alt="Under Control"
               fill
               className="object-contain dark:hidden"
             />
             <Image 
-              src="/assets/logo-dark.png" 
+              src="/assets/dark.png" 
               alt="Under Control"
               fill
               className="object-contain hidden dark:block"
@@ -413,13 +413,13 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-12">
           <div className="relative h-8 w-40">
             <Image 
-              src="/assets/logo-light.png" 
+              src="/assets/light.png" 
               alt="Under Control"
               fill
               className="object-contain dark:hidden"
             />
             <Image 
-              src="/assets/logo-dark.png" 
+              src="/assets/dark.png" 
               alt="Under Control"
               fill
               className="object-contain hidden dark:block"
