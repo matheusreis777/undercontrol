@@ -94,12 +94,20 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-primary-foreground shadow-lg shadow-primary/20">
-            <ShieldCheck size={24} />
+          <div className="relative h-10 w-48">
+            <Image 
+              src="/assets/logo-light.png" 
+              alt="Under Control"
+              fill
+              className="object-contain dark:hidden"
+            />
+            <Image 
+              src="/assets/logo-dark.png" 
+              alt="Under Control"
+              fill
+              className="object-contain hidden dark:block"
+            />
           </div>
-          <span className="text-xl font-bold font-outfit tracking-tight">
-            Under <span className="text-primary">Control</span>
-          </span>
         </div>
 
         {/* Desktop Nav */}
@@ -403,13 +411,19 @@ const Footer = () => {
     <footer className="py-16 border-t border-border">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-12">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-primary-foreground">
-              <ShieldCheck size={20} />
-            </div>
-            <span className="text-xl font-bold font-outfit">
-              Under <span className="text-primary">Control</span>
-            </span>
+          <div className="relative h-8 w-40">
+            <Image 
+              src="/assets/logo-light.png" 
+              alt="Under Control"
+              fill
+              className="object-contain dark:hidden"
+            />
+            <Image 
+              src="/assets/logo-dark.png" 
+              alt="Under Control"
+              fill
+              className="object-contain hidden dark:block"
+            />
           </div>
           <div className="flex gap-8">
             <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Termos</a>
