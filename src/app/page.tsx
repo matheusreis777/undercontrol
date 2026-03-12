@@ -76,7 +76,7 @@ const Logo = () => {
         className={cn(
           "h-14 w-auto object-contain transition-all duration-500",
           !isDark && "mix-blend-multiply brightness-[1.1] contrast-[1.1]",
-          isDark && "brightness-0 invert sepia saturate-[800%] hue-rotate-[85deg]" 
+          isDark && "invert sepia saturate-[200%] hue-rotate-[85deg] brightness-[1.5] mix-blend-screen" 
         )}
         priority
       />
