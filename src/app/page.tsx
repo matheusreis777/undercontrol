@@ -443,13 +443,18 @@ const Footer = () => {
             <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Contato</a>
           </div>
         </div>
-        <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="pt-8 border-t border-border flex justify-center text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Under Control. Por Matheus Reis Mendonça.
+            © {new Date().getFullYear()} Under Control. Por{" "}
+            <a 
+              href="https://www.matheusreis.dev" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors font-medium"
+            >
+              Matheus Reis Mendonça
+            </a>.
           </p>
-          <div className="flex items-center gap-2 text-sm text-muted-foreground">
-             Desenvolvido com <div className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse" /> Next.js & React Native
-          </div>
         </div>
       </div>
     </footer>
