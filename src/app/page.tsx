@@ -56,11 +56,13 @@ const Logo = () => {
   useEffect(() => setMounted(true), []);
 
   if (!mounted) {
-    return <div className="h-14 w-48" />;
+    return <div className="h-20 w-64" />;
   }
 
   const isDark = resolvedTheme === "dark";
-  const logoSrc = "/assets/under_control_logo_light.png";
+  const logoSrc = isDark 
+    ? "/assets/under_control_logo_dark.png" 
+    : "/assets/under_control_logo_light.png";
 
   return (
     <motion.div 
@@ -71,12 +73,11 @@ const Logo = () => {
       <Image
         src={logoSrc}
         alt="Under Control Logo"
-        width={300}
-        height={56}
+        width={500}
+        height={80}
         className={cn(
-          "h-14 w-auto object-contain transition-all duration-500",
-          !isDark && "mix-blend-multiply brightness-[1.1]",
-          isDark && "invert grayscale contrast-[2] brightness-[1.5] mix-blend-screen" 
+          "h-20 w-auto object-contain transition-all duration-500",
+          isDark ? "mix-blend-screen brightness-[1.2]" : ""
         )}
         priority
       />
