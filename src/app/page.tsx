@@ -75,8 +75,8 @@ const Logo = () => {
         height={56}
         className={cn(
           "h-14 w-auto object-contain transition-all duration-500",
-          !isDark && "mix-blend-multiply brightness-[1.1] contrast-[1.1]",
-          isDark && "invert sepia saturate-[200%] hue-rotate-[85deg] brightness-[1.5] mix-blend-screen" 
+          !isDark && "mix-blend-multiply brightness-[1.1]",
+          isDark && "invert grayscale contrast-[2] brightness-[1.5] mix-blend-screen" 
         )}
         priority
       />
