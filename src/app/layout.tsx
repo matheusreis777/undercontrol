@@ -16,6 +16,14 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "Under Control",
   description: "Plataforma central de soluções digitais para gestão empresarial e prestação de serviços.",
+  icons: {
+    icon: [
+      { url: "/assets/undercontrol-icon.png", sizes: "32x32" },
+      { url: "/assets/undercontrol-icon.png", sizes: "48x48" },
+      { url: "/assets/undercontrol-icon.png", sizes: "64x64" },
+    ],
+    apple: "/assets/undercontrol-icon.png",
+  },
 };
 
 export default function RootLayout({
