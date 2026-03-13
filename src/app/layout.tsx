@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -16,6 +16,7 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "Under Control",
   description: "Plataforma central de soluções digitais para gestão empresarial e prestação de serviços.",
+  manifest: "/manifest.json",
   icons: {
     icon: [
       { url: "/assets/undercontrol-icon.png", sizes: "32x32" },
@@ -24,6 +25,10 @@ export const metadata: Metadata = {
     ],
     apple: "/assets/undercontrol-icon.png",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#059669",
 };
 
 export default function RootLayout({

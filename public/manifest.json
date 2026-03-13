@@ -1,0 +1,21 @@
+{
+  "name": "Under Control",
+  "short_name": "Under Control",
+  "description": "Plataforma central de soluções digitais para gestão empresarial e prestação de serviços.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#00aa55",
+  "icons": [
+    {
+      "src": "/assets/undercontrol-icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/undercontrol-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
