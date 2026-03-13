@@ -354,9 +354,9 @@ const Products = () => {
                     <span className="text-sm">Mobile e Web</span>
                   </div>
                 </div>
-                <button className="flex items-center gap-2 text-primary font-bold group/btn">
+                <a href="/arcondicionado" className="inline-flex items-center gap-2 text-primary font-bold group/btn">
                   Explorar Produto <ChevronRight className="group-hover/btn:translate-x-1 transition-transform" />
-                </button>
+                </a>
               </div>
               <div className="relative rounded-[24px] overflow-hidden aspect-video shadow-xl border border-border group/img">
                 <Image 

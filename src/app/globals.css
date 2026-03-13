@@ -5,7 +5,7 @@
     --background: #ffffff;
     --foreground: #0f172a;
 
-    --primary: #10b981;
+    --primary: #38ae5b;
     /* Verde esmeralda vibrante */
     --primary-foreground: #ffffff;
 
@@ -24,15 +24,15 @@
 
     --border: #e2e8f0;
     --input: #e2e8f0;
-    --ring: #10b981;
+    --ring: #38ae5b;
   }
 
   .dark {
     --background: #020617;
     --foreground: #f8fafc;
 
-    --primary: #10b981;
-    --primary-foreground: #020617;
+    --primary: #38ae5b;
+    --primary-foreground: #ffffff;
 
     --secondary: #064e3b;
     --secondary-foreground: #f0fdf4;
@@ -45,7 +45,7 @@
 
     --border: #1e293b;
     --input: #1e293b;
-    --ring: #10b981;
+    --ring: #38ae5b;
   }
 }
 
@@ -86,7 +86,8 @@ body {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  background: linear-gradient(135deg, #38ae5b 0%, #059669 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
